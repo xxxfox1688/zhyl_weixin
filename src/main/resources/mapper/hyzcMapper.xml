@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao">
+
+    <select id="getAllUser" resultType="com.example.demo.pojo.User">
+        select * from zhyl_zchy
+    </select>
+    
+    <select id="getUserByName" parameterType="java.util.Map" resultType="com.example.demo.pojo.User">
+        select * from zhyl_zchy where user_name = #{user_name,jdbcType=VARCHAR}
+    </select>
+    
+    <insert id="addUser" parameterType="com.example.demo.pojo.User">
+    	insert into zhyl_zchy (user_seq,user_name,phone,sex,birthdate,zjhm,dz) values (${user_seq},${user_name},${phone},${sex},${birthdate},${zjhm},${dz});
+    </insert>
+    
+</mapper>

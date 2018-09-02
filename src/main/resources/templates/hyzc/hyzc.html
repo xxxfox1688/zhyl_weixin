@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>会员注册</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet"
+	href="/sui-mobile/css/sm.css">
+<link rel="stylesheet"
+	href="/sui-mobile/css/sm-extend.css">
+<script src="/jquery-weui/js/jquery-3.3.1.js"></script>
+<script src="/jquery-validate/jquery.validate.min.js"></script>
+<script src="/js/hyzc.js"></script>
+</head>
+<body>
+	<div class="page">
+		<header class="bar bar-nav">
+			<a class="button button-link button-nav pull-left" href="#"
+				data-transition='slide-out'> <span class="icon icon-left"></span>
+				返回
+			</a>
+			<h1 class="title">会员注册</h1>
+		</header>
+		<form id="addUserForm" method="post">
+		<input type="hidden" id="sex" name="sex"/>
+			<div class="content">
+				<!-- 这里是页面内容区 -->
+				<div class="list-block">
+					<ul>
+						<!-- Text inputs -->
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-name"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">姓名</div>
+									<div class="item-input">
+										<input type="text" id="user_name" name="user_name"
+											placeholder="您的姓名">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-email"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">电话</div>
+									<div class="item-input">
+										<input type="tel" id="phone" name="phone" placeholder="您的电话">
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- <li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-email"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">证件号码</div>
+									<div class="item-input">
+										<input type="text" id="zjhm" name="zjhm" placeholder="证件号码">
+									</div>
+								</div>
+							</div>
+						</li> -->
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-email"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">住址</div>
+									<div class="item-input">
+										<input type="text" id="dz" name="dz" placeholder="住址">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-gender"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">性别</div>
+									<div class="item-input">
+										<select id="sex_sel">
+											<option value="">---请选择---</option>
+											<option value="1">男</option>
+											<option value="2">女</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- Date -->
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="icon icon-form-calendar"></i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title label">生日</div>
+									<div class="item-input">
+										<input type="date" id="birthdate" name="birthdate"
+											placeholder="Birth day" value="2014-04-30">
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			<div class="content-block">
+				<p>
+					<a href="javascript:tj()" id="zc" class="button button-fill button-success button-round">注册</a>
+				</p>
+			</div>
+			</div>
+		</form>
+	</div>
+
+	<script type='text/javascript'
+		src='/sui-mobile/js/zepto.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='/sui-mobile/js/sm.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='/sui-mobile/js/sm-extend.js' charset='utf-8'></script>
+
+</body>
+</html>
